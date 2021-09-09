@@ -1,0 +1,11 @@
+<div class="valuesList" *ngIf="numService.getSelectedNumbers().length > 0">
+
+    <div class="listItem" *ngFor="let i of numService.getSelectedNumbers()">
+        <div> {{i}} </div> 
+    </div>
+
+</div>
+
+<div class="listEmpty" *ngIf="numService.getSelectedNumbers().length ===0">
+    Nenhum número foi sorteado ainda...
+</div>

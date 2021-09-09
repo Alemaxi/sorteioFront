@@ -1,0 +1,5 @@
+<div class="pageNumber">
+    <span *ngIf="!shuffling">{{sortNumber!==0?sortNumber:"Null"}}</span>
+    <app-shuffle-loading *ngIf="shuffling"></app-shuffle-loading>
+</div>
+

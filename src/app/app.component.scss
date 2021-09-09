@@ -1,0 +1,53 @@
+
+
+.mainScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+.titleBar {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(43, 114, 245,.5);
+    
+    .font {
+        font: 35px game;
+        color: rgb(43, 114, 245);;
+    }
+
+    .fontValues {
+        font: 15px game;
+        color: white;
+    }
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.bottomBar {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(43, 114, 245,.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+}
+
+.iconButton {
+    transform: scale(1.9);
+}

@@ -1,0 +1,30 @@
+.scaleCircle {
+    animation-name: scaleCi;
+    border-radius: 100%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity: .5;
+}
+
+@keyframes scaleCi {
+    0% {transform:scale(1)}
+    25% {
+        transform: scale(2);
+        opacity: .8;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .5;
+    }
+    75% {
+        transform: scale(2);
+        opacity: .8;
+    }
+    100% { 
+        transform: scale(1);
+        opacity: .5;
+    }
+}
