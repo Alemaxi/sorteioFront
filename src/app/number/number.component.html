@@ -1,5 +1,18 @@
-<div class="pageNumber">
-    <span *ngIf="!shuffling">{{sortNumber!==0?sortNumber:"Null"}}</span>
-    <app-shuffle-loading *ngIf="shuffling"></app-shuffle-loading>
-</div>
+<div class="organization">
 
+    <div class="sections">
+        a
+    </div>
+    <div class="pageNumber" [@openClose]="transitionState">
+        <span *ngIf="!shuffling">{{sortNumber!==0?sortNumber:"Null"}}</span>
+        <app-shuffle-loading *ngIf="shuffling"></app-shuffle-loading>
+    </div>
+    
+    <div class="sections">
+        <img src="../../assets/animacao.gif" class="animation" *ngIf="shuffling">
+        <audio src="../../assets/audio/Slice.mp3" id="audioEfect">
+
+        </audio>
+    </div>
+    
+</div>
